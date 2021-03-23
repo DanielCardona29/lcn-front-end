@@ -1,0 +1,77 @@
+/*tranformadores del tema oscuro*/
+.lateral-b-teme-dark {
+    color: white;
+}
+
+.login-wrapper-teme-dark {
+    background-color: black;
+}
+
+/*transformador del tema claro*/
+.lateral-b-teme-light {
+    color: black;
+}
+
+.login-wrapper-teme-light {
+    background-color: white;
+}
+
+/*Clases globales*/
+.login-wrapper {
+    font-size: 1rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-emphasis: center;
+    flex-direction: row;
+}
+.lateral-a {
+    background-image: url(../../../Imagenes/background-loging.jpg);
+    width: 70%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 61%;
+    border-bottom-right-radius: 70%;
+    border-top-left-radius: 60%;
+    border-bottom-left-radius: 30%;
+    background-position-x: center;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+.lateral-b {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.wrapper-form {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.wrapper-form form {
+    width: 70%;
+}
+
+.lateral-b a {
+    font-size: 1.2rem;
+    color: rgba(0, 51, 255, 0.96);
+    font-weight: bold;
+}
