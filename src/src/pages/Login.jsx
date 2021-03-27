@@ -3,10 +3,13 @@ import '../styles/login/login.claro.css';
 import * as $ from 'jquery';
 
 //Estas son mis librerias 
-import Login_form from '../components/login.form';
+import LoginForm from '../components/login.form';
 
 const Login = (props) => {
 
+    //Cambiamos el titulo de la pagina 
+    document.title = 'Lcn Idionmas | Login'
+    
     const [state, setstate] = useState({
         teme: localStorage.getItem('teme') || 'dark'
     })
@@ -45,15 +48,16 @@ const Login = (props) => {
                 <div className='row'>
                     <div className="form-check form-check-inline">
                         <input className="form-check-input" type="radio" onChange={ChangeTeme} name="inlineRadioOptions" id="teme1" value="dark" />
-                        <label className="form-check-label" for="teme1">Tema oscuro</label>
+                        <label className="form-check-label" htmlFor="teme1">Tema oscuro</label>
                     </div>
                     <div className="form-check form-check-inline">
                         <input className="form-check-input" type="radio" name="inlineRadioOptions" onChange={ChangeTeme} id="teme2" value="light" />
-                        <label className="form-check-label" for="teme2">Tema claro</label>
+                        <label className="form-check-label" htmlFor="teme2">Tema claro</label>
                     </div>
                 </div>
+                <div className="img-logo"></div>
 
-                <Login_form />
+                <LoginForm />
 
                 <a href="https://usuarios.lcnidiomas.edu.co/perdio-contrase%C3%B1a" target="_blank" rel="noreferrer">¿Olvidaste tu contraseña?</a>
 

@@ -1,6 +1,8 @@
 /*tranformadores del tema oscuro*/
 .lateral-b-teme-dark {
     color: white;
+    font-weight: 300 !important;
+
 }
 
 .login-wrapper-teme-dark {
@@ -9,11 +11,13 @@
 
 /*transformador del tema claro*/
 .lateral-b-teme-light {
-    color: black;
+    color: rgb(0, 0, 0);
+    
 }
 
 .login-wrapper-teme-light {
     background-color: white;
+    font-weight: 300 !important;
 }
 
 /*Clases globales*/
@@ -49,7 +53,7 @@
     right: 0;
     z-index: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -68,10 +72,54 @@
 
 .wrapper-form form {
     width: 70%;
+    max-width: 400px;
 }
 
 .lateral-b a {
-    font-size: 1.2rem;
-    color: rgba(0, 51, 255, 0.96);
+    font-size: 1.1rem;
+    color: rgba(61, 6, 213, 0.96);
     font-weight: bold;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+/*Diseño responsivo*/
+
+.img-logo{
+    width: 150px;
+    height: 150px;
+    background-image: url(../../../Imagenes/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media (min-width: 1900px) {
+    .wrapper-form{
+        justify-content: center;
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .lateral-a {
+        display: flex;
+        z-index: 1;
+        width: 100%;
+        border-top-right-radius: 8%;
+        border-bottom-right-radius: 8%;
+        border-top-left-radius: 8%;
+        border-bottom-left-radius: 8%;
+    }
+    .lateral-b {
+        width: 100%;
+    }
+
+    .wrapper-form {
+        justify-content: center;
+        align-items: center;
+    }
 }
